@@ -1,0 +1,30 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "My first api CRUD",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joksan2003/FIRST-CRUD.git"
+  },
+  "keywords": [
+    "node",
+    "js"
+  ],
+  "author": "Andrick Natividad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joksan2003/FIRST-CRUD/issues"
+  },
+  "homepage": "https://github.com/Joksan2003/FIRST-CRUD#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

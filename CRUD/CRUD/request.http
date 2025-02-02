@@ -1,0 +1,52 @@
+//BUSCAR TODAS LAS TAREAS
+GET http://localhost:3000/tasks HTTP/1.1
+
+###
+//BUSCAR TAREA POR ID
+GET http://localhost:3000/tasks/3 HTTP/1.1
+
+###
+//AGREGAR UNA TAREA
+POST http://localhost:3000/tasks HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Prueba 4",
+    "description": "Esta es una prueba",
+    "completed": true,
+    "priority": "media",
+    "createdAt": "2024-01-28T09:30:00Z",
+    "updatedAt": "2024-01-30T10:15:00Z",
+    "dueDate": "2024-02-05T17:00:00Z",
+    "tags": ["trabajo", "informes"]
+}
+
+###
+//ACTUALIZAR DATOS DE ALGUNA TAREA
+PUT http://localhost:3000/tasks/4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "completed": true,
+    "priority": "alta"
+}
+
+###
+//BORRAR TAREA
+DELETE http://localhost:3000/tasks/4 HTTP/1.1
+
+###
+//CONTAR TOTAL DE TAREAS
+GET http://localhost:3000/tasks/count HTTP/1.1
+
+###
+//TAREA MAS RECIENTES
+GET http://localhost:3000/tasks/latest HTTP/1.1
+
+###
+//TAREA MAS ANTIGUA
+GET http://localhost:3000/tasks/oldest HTTP/1.1
+
+###
+//TAREAS COMPLETADAS Y PENDIENTES
+GET http://localhost:3000/tasks/status HTTP/1.1
